@@ -18,7 +18,8 @@ jobs:
         DRY_RUN: true
     - name: Set env
       run: |
-        echo "new tag version is"
-        echo $new_tag
+        git fetch --unshallow --tags
+        echo $?
+        git tag --list
 
 
