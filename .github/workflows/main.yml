@@ -18,7 +18,7 @@ jobs:
         DRY_RUN: true
     - name: Set env
       run: |
-        git fetch --unshallow --tags
+        git fetch --tags
         echo $?
         git tag --list
 
